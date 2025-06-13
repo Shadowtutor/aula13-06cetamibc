@@ -25,6 +25,16 @@ body {
     color: var(--text-dark);
 }
 
+p {
+    text-align: justify;
+}
+h3 {
+    font-size: 1.25rem;
+    margin-bottom: 1rem;
+    color: var(--text-dark);
+    text-align: justify;
+}
+
 .app-container {
     display: flex;
     min-height: 100vh;
