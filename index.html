@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laboratório de Laço 'while'</title>
+    <!-- Link para o arquivo de estilos CSS -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Link para ícones (Font Awesome) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- Container principal que organiza a página em sidebar e conteúdo -->
+    <div class="app-container">
+
+        <!-- Barra Lateral (Sidebar) para a lista de exemplos -->
+        <aside class="sidebar" id="sidebar">
+            <div class="sidebar-header">
+                <h2>Exemplos de `while`</h2>
+            </div>
+            <!-- A lista de exemplos será preenchida aqui pelo JavaScript -->
+            <ul class="example-list" id="exampleList"></ul>
+        </aside>
+
+        <!-- Conteúdo Principal -->
+        <main class="main-content">
+            <!-- Botão para abrir/fechar sidebar em telas pequenas -->
+            <button id="menu-toggle" class="menu-toggle"><i class="fas fa-bars"></i></button>
+
+            <!-- Seção de Explicação Teórica -->
+            <section class="card explanation-card">
+                <h2>O que é o laço `while`?</h2>
+                <p>
+                    O laço <code>while</code> (que significa "enquanto" em inglês) é uma estrutura de controle que
+                    repete um bloco de código continuamente, <strong>enquanto</strong> uma condição especificada for
+                    verdadeira.
+                </p>
+                <p>
+                    <strong>No dia a dia:</strong> Pense em lavar a louça. Você continua lavando pratos
+                    <strong>enquanto</strong> houver pratos sujos na pia. Quando a condição ("há pratos sujos") se torna
+                    falsa, você para. Em programação, usamos o <code>while</code> para tarefas como validar entradas de
+                    usuário, processar listas de dados até o fim, ou em jogos para manter o loop principal rodando.
+                </p>
+            </section>
+
+            <!-- Seção do Exemplo Interativo -->
+            <section class="card interactive-card">
+                <!-- O título e a descrição do exemplo ativo aparecerão aqui -->
+                <h3 id="exampleTitle">Selecione um exemplo na lista ao lado</h3>
+                <p id="exampleDescription"></p>
+
+                <!-- Os campos de entrada para o exemplo serão inseridos aqui -->
+                <div class="input-area" id="inputArea"></div>
+
+                <!-- O botão para executar a lógica -->
+                <button id="executarBtn">Executar</button>
+
+                <!-- Área para exibir o resultado -->
+                <div class="output-area" id="outputArea">
+                    <pre id="output">O resultado aparecerá aqui...</pre>
+                </div>
+            </section>
+
+            <!-- ======================================================= -->
+            <!--   NOVA SEÇÃO ADICIONADA PARA O VÍDEO DO YOUTUBE   -->
+            <!-- ======================================================= -->
+            <section class="card video-card">
+                <h2>Vídeo de Apoio</h2>
+                <p>Um vídeo complementar sobre laços de repetição em JavaScript para reforçar o aprendizado.</p>
+                <!-- O container abaixo é essencial para tornar o vídeo responsivo -->
+                <div class="video-container">
+                    <iframe src="https://www.youtube.com/embed/5rZqYPKIwkY?si=kYDU8YLmnPqFF4L5"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+                    </iframe>
+                </div>
+            </section>
+
+        </main>
+    </div>
+
+    <!-- Rodapé (mantive a versão anterior, mas você pode usar a versão com links se preferir) -->
+    <footer>
+        <p>Desenvolvido por Gilvan Daniel da Silva - Aluno do CETAM INSTITUTO BENJAMIM CONSTANT</p>
+    </footer>
+
+    <!-- Link para o arquivo JavaScript -->
+    <script src="script.js"></script>
+
+</body>
+
+</html>
